@@ -36,13 +36,13 @@ const MainDiv = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-full border-2">
+    <div className="flex justify-center items-center h-full border-2 overflow-x-hidden">
       {buttonVisibility ? (
         <div className="whole-section flex flex-col justify-center items-center h-full">
           <div className="text-div flex">
-            <h1>Will you be my valentines?</h1>
+            <h1>Will you be my valentine?</h1>
           </div>
-          <div className="button-div flex">
+          <div className="button-div flex items-center">
             <LvButton
               dimensions={size}
               // fontSize={fontSize}
