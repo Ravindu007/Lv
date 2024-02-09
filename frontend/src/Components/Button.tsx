@@ -1,5 +1,6 @@
 type Props = {
-    name?:string
+    name?:string;
+    buttonColor?:string;
     onClick?:() => void; 
     dimensions?:number
     fontSize?: number;
@@ -12,11 +13,12 @@ const LvButton = (props:Props) => {
     width: props.dimensions ? `${props.dimensions}px` : '50px',
     height: props.dimensions ? `${props.dimensions}px` : '50px',
     fontSize: props.fontSize ? `${props.dimensions}px` : 'inherit',
-    padding: props.padding ? `${props.padding}px` : '2px'
+    padding: props.padding ? `${props.padding}px` : '2px',
+    backgroundColor: props.buttonColor ? props.buttonColor : "yellow"
  }
   return (
     <div 
-        className={`rounded-md bg-yellow-200 m-1 hover:cursor-pointer flex justify-center items-center`}
+        className={`rounded-md m-1 hover:cursor-pointer flex justify-center items-center text-center`}
         onClick={props.onClick}
         style={buttonStyles}
     >

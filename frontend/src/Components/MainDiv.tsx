@@ -40,7 +40,7 @@ const MainDiv = () => {
       {buttonVisibility ? (
         <div className="whole-section flex flex-col justify-center items-center h-full">
           <div className="text-div flex">
-            <h1>Will you be my valentine?</h1>
+            <h1 className="font-semibold">Will you be my valentine?</h1>
           </div>
           <div className="button-div flex items-center">
             <LvButton
@@ -48,6 +48,7 @@ const MainDiv = () => {
               // fontSize={fontSize}
               name={nameArray[arrayIndex]}
               padding={padding}
+              buttonColor="pink"
               onClick={() => {
                 handleSuccess();
               }}
@@ -77,7 +78,7 @@ const MainDiv = () => {
             animate="animate"
             transition={{ duration: 2 }}
           >
-            <img src="/images/p1.jpg" alt="" />
+            <video src="/images/v1.mp4" autoPlay></video>
           </motion.div>
         </div>
       )}
